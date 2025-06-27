@@ -1,52 +1,52 @@
 /* intro_sec */
-#havehad{
+#moneffe{
   width: 100%;
   margin: 0 auto;
-  font-family: 'Pretendard Variable';
+  font-family: 'Noto Sans KR', sans-serif; 
 }
 
-#havehad section{
+#moneffe section{
   width: 100%;
   margin-top: 50px;
 }
 
-#havehad .intro_sec .intro_wrap{
+#moneffe .intro_sec .intro_wrap{
   width: 100%;
   max-width: 1400px;
   margin: 50px auto 0;
 }
 
-#havehad .intro_top p{
+#moneffe .intro_top p{
   font-size: 18px;
   font-weight: 600;
   color: #032057;
 }
 
-#havehad .intro_con{
+#moneffe .intro_con{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
 
-#havehad .intro_text h2{
+#moneffe .intro_text h2{
   font-weight: 600;
   color: #333;
 }
 
-#havehad .intro_text p{
+#moneffe .intro_text p{
   font-weight: 800;
   color: #032057;
 }
 
-#havehad .intro_text .intro_nav{
+#moneffe .intro_text .intro_nav{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-#havehad .intro_box{
+#moneffe .intro_box{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -58,40 +58,40 @@
     transform: translateY(0px);
   }
   50%{
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100%{
     transform: translateY(0px);
   }
 }
 
-#havehad .intro_box{
+#moneffe .intro_box{
   width: 100%;
 }
 
-#havehad .intro_box .intro_img img{
+#moneffe .intro_box .intro_img img{
   width: 1000px;
   animation: float 3s ease-in-out infinite;
 }
 
-#havehad .intro_wrap .intro_bottom{
+#moneffe .intro_wrap .intro_bottom{
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-#havehad .intro_bottom .bottom_text p{
+#moneffe .intro_bottom .bottom_text p{
   font-size: 18px;
   font-weight: 400;
 }
 
-#havehad .intro_bottom .bottom_text strong{
+#moneffe .intro_bottom .bottom_text strong{
   color: #032057;
   font-weight: 600;
 }
 
 /* overview_sec */
-#havehad .overview_wrap{
+#moneffe .overview_wrap{
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -100,20 +100,20 @@
   background: #032057;
 }
 
-#havehad .overview_wrap h2{
+#moneffe .overview_wrap h2{
   font-weight: 600;
   color: #fff;
   margin-bottom: 30px;
 }
 
-#havehad .overview_wrap h3{
+#moneffe .overview_wrap h3{
   font-weight: 800;
   color: #fff;
   margin-bottom: 50px;
   font-size: 60px;
 }
 
-#havehad .overview_wrap p{
+#moneffe .overview_wrap p{
   margin-bottom: 50px;
   color: #fff;
   margin-bottom: 100px;
@@ -121,7 +121,7 @@
 }
 
 /* needs_sec */
-#havehad .needs_wrap{
+#moneffe .needs_wrap{
   width: 100%;
   max-width: 1400px;
   height: 700px;
@@ -129,17 +129,17 @@
   text-align: left;
 }
 
-#havehad .needs_wrap h2{
+#moneffe .needs_wrap h2{
   color: #032057;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-#havehad .needs_wrap p{
+#moneffe .needs_wrap p{
   margin-bottom: 200px;
 }
 
-#havehad .needs_wrap .needs_box{
+#moneffe .needs_wrap .needs_box{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -147,7 +147,7 @@
   gap: 30px;
 }
 
-#havehad .needs_wrap .needs_box .need{
+#moneffe .needs_wrap .needs_box .need{
   border-radius: 1000px;
   width: 400px;
   height: 400px;
@@ -155,12 +155,12 @@
   background: #032057;
 }
 
-#havehad .needs_wrap .needs_box .need:nth-child(1),
-#havehad .needs_wrap .needs_box .need:nth-child(3){
+#moneffe .needs_wrap .needs_box .need:nth-child(1),
+#moneffe .needs_wrap .needs_box .need:nth-child(3){
   background: #0B43AC;
 }
 
-#havehad .needs_wrap .needs_box .need p{
+#moneffe .needs_wrap .needs_box .need p{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -170,28 +170,28 @@
 }
 
 /* goal_sec */
-#havehad .goal_wrap{
+#moneffe .goal_wrap{
   max-width: 1400px;
   width: 100%;
   height: 800px;
   margin: 100px auto 0;
 }
 
-#havehad .goal_wrap .goal_text{
+#moneffe .goal_wrap .goal_text{
   text-align: center;
 }
 
-#havehad .goal_wrap h2{
+#moneffe .goal_wrap h2{
   color: #032057;
   font-weight: 600;
   margin-bottom: 50px;
 }
 
-#havehad .goal_wrap p{
+#moneffe .goal_wrap p{
   margin-bottom: 100px;
 }
 
-#havehad .goal_box{
+#moneffe .goal_box{
   width: 100%;
   display: flex;
   position: relative;
@@ -199,7 +199,7 @@
   align-items: center;
 }
 
-#havehad .goal{
+#moneffe .goal{
   border: 3px solid #032057;
   padding: 15px 30px;
   font-size: 30px;
@@ -209,94 +209,94 @@
   transition: 0.3s;
 }
 
-#havehad .goal:hover{
+#moneffe .goal:hover{
   background: #032057;
   color: #fff;
 }
 
-#havehad .goal.go1{
+#moneffe .goal.go1{
   position: absolute;
   top: 80px;
   left: 150px;
 }
 
-#havehad .goal.go2{
+#moneffe .goal.go2{
   position: absolute;
   top: 150px;
   left: 500px;
 }
 
-#havehad .goal.go3{
+#moneffe .goal.go3{
   position: absolute;
   top: 60px;
   left: 750px;
 }
 
-#havehad .goal.go4{
+#moneffe .goal.go4{
   position: absolute;
   top: 100px;
   left: 1000px;
 }
 
-#havehad .goal.go5{
+#moneffe .goal.go5{
   position: absolute;
   top: 400px;
   left: 180px;
 }
 
-#havehad .goal.go6{
+#moneffe .goal.go6{
   position: absolute;
   top: 350px;
   left: 500px;
 }
 
-#havehad .goal.go7{
+#moneffe .goal.go7{
   position: absolute;
   top: 280px;
   left: 750px;
 }
 
-#havehad .goal.go8{
+#moneffe .goal.go8{
   position: absolute;
   top: 450px;
   left: 1000px;
 }
 
 /* design_sec */
-#havehad .design_sec{
+#moneffe .design_sec{
   width: 100%;
   max-width: 1400px;
   margin: 100px auto 0;
 }
 
-#havehad .design_text{
+#moneffe .design_text{
   width: 100%;
   text-align: center;
 }
 
-#havehad .design_text h2{
+#moneffe .design_text h2{
   font-weight: 600;
   color: #032057;
   margin-bottom: 50px;
 }
 
-#havehad .design_text p{
+#moneffe .design_text p{
   font-weight: 600;
   color: #666;
   margin-bottom: 100px;
 }
 
-#havehad .design_sec .head2{
+#moneffe .design_sec .head2{
   font-weight: 600;
   color: #032057;
   margin-bottom: 100px;
 }
 
-#havehad .color_sec{
+#moneffe .color_sec{
   margin-bottom: 300px;
 }
 
-#havehad .color_sec .color_box{
+#moneffe .color_sec .color_box{
   margin-top: 100px;
   width: 100%;
   display: flex;
@@ -304,29 +304,29 @@
   align-items: center;
 }
 
-#havehad .color_sec .color_box .color{
+#moneffe .color_sec .color_box .color{
   width: 300px;
   height: 300px;
   position: relative;
 }
 
-#havehad .color_sec .color_box .color:nth-child(1){
+#moneffe .color_sec .color_box .color:nth-child(1){
   width: 600px;
   background: #333;
   color: #fff;
 }
 
-#havehad .color_sec .color_box .color:nth-child(2){
+#moneffe .color_sec .color_box .color:nth-child(2){
   background: #e8e8e8;
   color: #333;
 }
 
-#havehad .color_sec .color_box .color:nth-child(3){
+#moneffe .color_sec .color_box .color:nth-child(3){
   background: #0034ff;
   color: #fff;
 }
 
-#havehad .color_sec .color_box .color p{
+#moneffe .color_sec .color_box .color p{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -335,51 +335,51 @@
 }
 
 /* typo_sec */
-#havehad .typo_sec{
+#moneffe .typo_sec{
   width: 100%;
   max-width: 1400px;
   margin-bottom: 300px;
 }
 
-#havehad .typo_sec .typo_img{
+#moneffe .typo_sec .typo_img{
   margin-top: 100px;
 }
 
-#havehad .typo_sec .typo_img img{
+#moneffe .typo_sec .typo_img img{
   width: 100%;
   max-width: 1400px;
   margin: auto;
 }
 
 /* main_sec */
-#havehad .main_sec{
+#moneffe .main_sec{
   width: 100%;
   max-width: 1400px;
   margin: auto;
   position: relative;
 }
 
-#havehad .main_img img{
+#moneffe .main_img img{
   width: 1000px;
   margin-left: 130px;
 }
-#havehad .main_sec h2{
+#moneffe .main_sec h2{
   color: #032057;
 }
 
-#havehad .main_text{
+#moneffe .main_text{
   position: absolute;
   top: 300px;
   left: 750px;
 }
 
-#havehad .main_text h3{
+#moneffe .main_text h3{
   font-weight: 600;
   color: #032057;
   margin-bottom: 20px;
 }
 
-#havehad .main_text p{
+#moneffe .main_text p{
   font-weight: 400;
   color: #333;
   font-size: 18px;
@@ -387,38 +387,38 @@
 }
 
 /* sub_sec */
-#havehad .sub_sec{
+#moneffe .sub_sec{
   width: 100%;
   max-width: 1400px;
   margin: auto;
   position: relative;
 }
 
-#havehad .sub_img{
+#moneffe .sub_img{
   margin-top: 300px;
   margin-left: 500px;
 }
 
-#havehad .sub_img img{
+#moneffe .sub_img img{
   width: 800px;
 }
 
-#havehad .sub_sec h2{
+#moneffe .sub_sec h2{
   color: #032057;
 }
 
-#havehad .sub_text{
+#moneffe .sub_text{
   position: absolute;
   top: 500px;
 }
 
-#havehad .sub_text h3{
+#moneffe .sub_text h3{
   font-weight: 600;
   color: #032057;
   margin-bottom: 20px;
 }
 
-#havehad .sub_text p{
+#moneffe .sub_text p{
   font-weight: 400;
   color: #333;
   font-size: 18px;
@@ -426,7 +426,7 @@
 }
 
 /* end_sec */
-#havehad .end_sec{
+#moneffe .end_sec{
   width: 100%;
   height: 250px;
   background: #032057;
@@ -434,13 +434,13 @@
   text-align: center;
 }
 
-#havehad .end_sec h2{
+#moneffe .end_sec h2{
   padding-top: 100px;
   color: #fff;
   font-weight: 600;
 }
 
-#havehad .end_sec p{
+#moneffe .end_sec p{
   margin-top: 10px;
   color: #fff;
 }
