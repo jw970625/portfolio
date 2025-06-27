@@ -1,20 +1,40 @@
 /* intro_sec */
-#havehad .intro_wrap{
-  width: 50%;
-  max-width: 140rem;
+#havehad{
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  font-family: 'Pretendard Variable';
+}
+
+#havehad section{
+  width: 100%;
+  margin-top: 100px;
+}
+
+#havehad .intro_sec .intro_wrap{
+  margin-top: 100px;
+  width: 100%;
+}
+
+#havehad .intro_top{
+  font-size: 18px;
+  font-weight: 600;
+  color: #032057;
+}
+
+#havehad .intro_con{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #havehad .intro_text h2{
-  font-size: 40px;
-  font-weight: 400;
+  font-weight: 600;
+  color: #333;
 }
 
 #havehad .intro_text p{
-  font-size: 100px;
   font-weight: 600;
   color: #032057;
 }
@@ -38,9 +58,269 @@
   }
 }
 
+#havehad .intro_box{
+  width: 100%;
+}
+
 #havehad .intro_box .intro_img img{
-  width: 1200px;
+  width: 1000px;
   animation: float 3s ease-in-out infinite;
 }
+
+#havehad .intro_wrap .intro_bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#havehad .intro_bottom .bottom_text p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#havehad .intro_bottom .bottom_text strong{
+  color: #032057;
+  font-weight: 600;
+}
+
+/* overview_sec */
+#havehad .overview_wrap{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+#havehad .overview_wrap h2{
+  font-weight: 600;
+  color: #032057;
+  margin-bottom: 30px;
+}
+
+#havehad .overview_wrap h3{
+  font-weight: 800;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+#havehad .overview_wrap p{
+  margin-bottom: 50px;
+}
+
+/* needs_sec */
+#havehad .needs_wrap{
+  width: 100%;
+  text-align: left;
+}
+
+#havehad .needs_wrap h2{
+  color: #032057;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#havehad .needs_wrap p{
+  margin-bottom: 100px;
+}
+
+#havehad .needs_wrap .needs_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#havehad .needs_wrap .needs_box .need{
+  border-radius: 1000px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: #032057;
+}
+
+#havehad .needs_wrap .needs_box .need:nth-child(1),
+#havehad .needs_wrap .needs_box .need:nth-child(3){
+  background: #0B43AC;
+}
+
+#havehad .needs_wrap .needs_box .need p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+}
+
+/* goal_sec */
+#havehad .goal_wrap{
+  width: 100%;
+  height: 500px;
+}
+
+#havehad .goal_wrap .goal_text{
+  text-align: center;
+}
+
+#havehad .goal_wrap h2{
+  color: #032057;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+#havehad .goal_wrap p{
+  margin-bottom: 50px;
+}
+
+#havehad .goal_box{
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#havehad .goal{
+  border: 3px solid #032057;
+  padding: 15px 30px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #032057;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+#havehad .goal:hover{
+  background: #032057;
+  color: #fff;
+}
+
+#havehad .goal.go1{
+  position: absolute;
+  top: 80px;
+  left: 150px;
+}
+
+#havehad .goal.go2{
+  position: absolute;
+  top: 150px;
+  left: 500px;
+}
+
+#havehad .goal.go3{
+  position: absolute;
+  top: 60px;
+  left: 750px;
+}
+
+#havehad .goal.go4{
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+}
+
+#havehad .goal.go5{
+  position: absolute;
+  top: 400px;
+  left: 180px;
+}
+
+#havehad .goal.go6{
+  position: absolute;
+  top: 350px;
+  left: 500px;
+}
+
+#havehad .goal.go7{
+  position: absolute;
+  top: 280px;
+  left: 750px;
+}
+
+#havehad .goal.go8{
+  position: absolute;
+  top: 450px;
+  left: 1000px;
+}
+
+/* design_sec */
+#havehad .design_sec{
+  width: 100%;
+}
+
+#havehad .design_sec .head2{
+  font-weight: 600;
+  color: #032057;
+  margin-bottom: 30px;
+}
+
+#havehad .color_sec .color_box{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#havehad .color_sec .color_box .color{
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+#havehad .color_sec .color_box .color:nth-child(1){
+  width: 600px;
+  background: #333;
+  color: #fff;
+}
+
+#havehad .color_sec .color_box .color:nth-child(2){
+  background: #e8e8e8;
+  color: #333;
+}
+
+#havehad .color_sec .color_box .color:nth-child(3){
+  background: #0034ff;
+  color: #fff;
+}
+
+#havehad .color_sec .color_box .color p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+/* typo_sec */
+#havehad .typo_sec{
+  margin-top: 100px;
+}
+
+#havehad .typo_sec .typo_img{
+  margin-top: 100px;
+}
+
+#havehad .typo_sec .typo_img img{
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* info_sec */
+#havehad .info_sec{
+  margin-top: 100px;
+}
+
+#havehad .info_sec .info_img{
+  margin-top: 100px;
+}
+
+#havehad .info_sec .info_img img{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 
 

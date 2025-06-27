@@ -1,24 +1,41 @@
-/* text size */
-.title{
-  font-size: 80px;
-  font-weight: 600;
-}
-
-.card{
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.body{
-  font-size: 20px;
-  font-weight: 400;
-}
-
 /* Colors */
 
-:root{
-
-  --havehad{
-    color: #032057;
-  }
+/* text size */
+.head1{
+  font-size: 100px;
+  font-weight: 600;
+  color: #333;
 }
+
+.head2{
+  font-size: 60px;
+  font-weight: 600;
+  color: #333;
+}
+
+.head3{
+  font-size: 48px;
+  font-weight: 600;
+  color: #333;
+}
+
+.body1{
+  font-size: 40px;
+  font-weight: 400;
+  color: #333;
+}
+
+.body2{
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+}
+
+.body3{
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+}
+
+
+
