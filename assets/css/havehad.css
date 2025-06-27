@@ -1,22 +1,22 @@
 /* intro_sec */
 #havehad{
   width: 100%;
-  max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
   font-family: 'Pretendard Variable';
 }
 
 #havehad section{
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #havehad .intro_sec .intro_wrap{
-  margin-top: 100px;
   width: 100%;
+  max-width: 1400px;
+  margin: 50px auto 0;
 }
 
-#havehad .intro_top{
+#havehad .intro_top p{
   font-size: 18px;
   font-weight: 600;
   color: #032057;
@@ -37,6 +37,13 @@
 #havehad .intro_text p{
   font-weight: 600;
   color: #032057;
+}
+
+#havehad .intro_text .intro_nav{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #havehad .intro_box{
@@ -86,8 +93,10 @@
 /* overview_sec */
 #havehad .overview_wrap{
   width: 100%;
-  height: 400px;
+  max-width: 1400px;
+  margin: 0 auto;
   text-align: center;
+  padding: 200px 0;
 }
 
 #havehad .overview_wrap h2{
@@ -98,17 +107,22 @@
 
 #havehad .overview_wrap h3{
   font-weight: 800;
-  color: #444;
+  color: #222;
   margin-bottom: 50px;
 }
 
 #havehad .overview_wrap p{
   margin-bottom: 50px;
+  color: #666;
+  margin-bottom: 100px;
 }
 
 /* needs_sec */
 #havehad .needs_wrap{
   width: 100%;
+  max-width: 1400px;
+  height: 700px;
+  margin: 100px auto 0;
   text-align: left;
 }
 
@@ -119,7 +133,7 @@
 }
 
 #havehad .needs_wrap p{
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 #havehad .needs_wrap .needs_box{
@@ -154,8 +168,10 @@
 
 /* goal_sec */
 #havehad .goal_wrap{
+  max-width: 1400px;
   width: 100%;
-  height: 500px;
+  height: 800px;
+  margin: 100px auto 0;
 }
 
 #havehad .goal_wrap .goal_text{
@@ -169,7 +185,7 @@
 }
 
 #havehad .goal_wrap p{
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 #havehad .goal_box{
@@ -246,12 +262,35 @@
 /* design_sec */
 #havehad .design_sec{
   width: 100%;
+  max-width: 1400px;
+  margin: 100px auto 0;
+}
+
+#havehad .design_text{
+  width: 100%;
+  text-align: center;
+}
+
+#havehad .design_text h2{
+  font-weight: 600;
+  color: #032057;
+  margin-bottom: 50px;
+}
+
+#havehad .design_text p{
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 100px;
 }
 
 #havehad .design_sec .head2{
   font-weight: 600;
   color: #032057;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+#havehad .color_sec{
+  margin-bottom: 300px;
 }
 
 #havehad .color_sec .color_box{
@@ -294,7 +333,9 @@
 
 /* typo_sec */
 #havehad .typo_sec{
-  margin-top: 100px;
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 300px;
 }
 
 #havehad .typo_sec .typo_img{
@@ -307,20 +348,82 @@
   margin: auto;
 }
 
-/* info_sec */
-#havehad .info_sec{
-  margin-top: 100px;
-}
-
-#havehad .info_sec .info_img{
-  margin-top: 100px;
-}
-
-#havehad .info_sec .info_img img{
+/* main_sec */
+.main_sec{
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: auto;
+  position: relative;
 }
+
+.main_img img{
+  width: 1000px;
+}
+.main_sec h2{
+  color: #032057;
+}
+
+.main_text{
+  position: absolute;
+  top: 300px;
+  left: 600px;
+}
+
+.main_text h3{
+  font-weight: 600;
+  color: #032057;
+  margin-bottom: 20px;
+}
+
+.main_text p{
+  font-weight: 400;
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* sub_sec */
+.sub_sec{
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+.sub_img{
+  margin-top: 300px;
+  margin-left: 500px;
+}
+
+.sub_img img{
+  width: 800px;
+}
+
+.sub_sec h2{
+  color: #032057;
+}
+
+.sub_text{
+  position: absolute;
+  top: 600px;
+}
+
+.sub_text h3{
+  font-weight: 600;
+  color: #032057;
+  margin-bottom: 20px;
+}
+
+.sub_text p{
+  font-weight: 400;
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+
+
 
 
 
