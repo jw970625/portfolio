@@ -1,0 +1,46 @@
+/* intro_sec */
+#havehad .intro_wrap{
+  width: 50%;
+  max-width: 140rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#havehad .intro_text h2{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#havehad .intro_text p{
+  font-size: 100px;
+  font-weight: 600;
+  color: #032057;
+}
+
+#havehad .intro_box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+#havehad .intro_box .intro_img img{
+  width: 1200px;
+  animation: float 3s ease-in-out infinite;
+}
+
+
