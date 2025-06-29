@@ -1,32 +1,32 @@
 /* Colors */
 
 /* text size */
-.head1{
-  font-size: 100px;
+.title1{
+  font-size: 80px;
   font-weight: 600;
   color: #333;
 }
 
-.head2{
+.title2{
   font-size: 60px;
   font-weight: 600;
   color: #333;
 }
 
-.head3{
-  font-size: 48px;
+.title3{
+  font-size: 40px;
   font-weight: 600;
   color: #333;
 }
 
 .body1{
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   color: #333;
 }
 
 .body2{
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   color: #333;
 }

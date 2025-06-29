@@ -1,10 +1,10 @@
 const svg = document.getElementById("svg");
-    const colors = ["#", "#999", "#e8e8e8"];
+    const colors = ["#055B3C", "#C2D20A", "#FF7A00"];
 
     function drawCircles() {
       for (let i = 0; i < 15; i++) {
         const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        const radius = Math.floor(Math.random() * 600) + 30; // 반지름 30~230
+        const radius = Math.floor(Math.random() * 1000) + 30; // 반지름 30~230
         const cx = Math.random() * window.innerWidth;
         const cy = Math.random() * window.innerHeight;
         const strokeWidth = Math.floor(Math.random() * 3) + 1; // 1~2
