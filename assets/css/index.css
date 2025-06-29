@@ -1,0 +1,23 @@
+html, body { margin:0; padding:0; background: #ffffff; cursor: crosshair; }
+svg { position:fixed; top:0; bottom:0; left:0; right:0 }
+
+circle {
+  fill: transparent;
+  stroke-dasharray: 1000;
+  stroke-linecap: round;
+  animation: lineIn 1500ms;
+}
+
+@keyframes lineIn {
+  0%{ 
+    opacity: 0;
+    stroke-dashoffset: 1000;
+  } 
+  10% {
+    opacity: 1;
+  }
+  100%{
+    stroke-dashoffset: 0;
+    
+  } 
+}
