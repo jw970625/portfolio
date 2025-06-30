@@ -2,24 +2,25 @@
 #moneffe{
   width: 100%;
   margin: 0 auto;
-  font-family: 'Noto Sans KR', sans-serif; 
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #f8f6f2; 
 }
 
 #moneffe section{
   width: 100%;
-  margin-top: 50px;
 }
 
 #moneffe .intro_sec .intro_wrap{
   width: 100%;
   max-width: 1400px;
-  margin: 50px auto 0;
+  margin: 0 auto;
 }
 
 #moneffe .intro_top p{
   font-size: 18px;
   font-weight: 600;
-  color: #032057;
+  color: #5d4f45;
+  padding: 50px 0 0;
 }
 
 #moneffe .intro_con{
@@ -36,7 +37,7 @@
 
 #moneffe .intro_text p{
   font-weight: 800;
-  color: #032057;
+  color: #a8b2a1;
 }
 
 #moneffe .intro_text .intro_nav{
@@ -97,7 +98,7 @@
   text-align: center;
   padding: 150px 0;
   border: 1px solid #000;
-  background: #032057;
+  background: #5d4f45;
 }
 
 #moneffe .overview_wrap h2{
