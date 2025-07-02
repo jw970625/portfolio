@@ -17,7 +17,11 @@ html,body{
   height: 100%;
 }
 
-html{overflow-x:hidden;}
+html{
+  overflow-x:hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
 body{
   font-family: 'Noto Sans KR', sans-serif;
@@ -33,4 +37,14 @@ a{
 article,aside,details,summary,figcaption,figure,
 footer,header,hgroup,main,nav,section{ 
 	display:block;  
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	max-width: 100%;
+	vertical-align: top;
 }

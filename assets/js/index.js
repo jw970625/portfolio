@@ -1,40 +1,32 @@
-const svg = document.getElementById("svg");
-    const colors = ["#055B3C", "#C2D20A", "#FF7A00"];
+function updateClock() {
+  const now = new Date();
+  const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
+  const dayOfWeek = daysOfWeek[now.getDay()];
+  const year = now.getFullYear();
+  const month = (now.getMonth() + 1).toString().padStart(2, '0');
+  const day = now.getDate().toString().padStart(2, '0');
+  const hours = now.getHours();
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
 
-    function drawCircles() {
-      for (let i = 0; i < 15; i++) {
-        const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        const radius = Math.floor(Math.random() * 1000) + 30; // 반지름 30~230
-        const cx = Math.random() * window.innerWidth;
-        const cy = Math.random() * window.innerHeight;
-        const strokeWidth = Math.floor(Math.random() * 3) + 1; // 1~2
-        const color = colors[Math.floor(Math.random() * colors.length)];
-
-        circle.setAttribute("r", radius);
-        circle.setAttribute("cx", cx);
-        circle.setAttribute("cy", cy);
-        circle.setAttribute("stroke", color);
-        circle.setAttribute("stroke-width", strokeWidth);
-        circle.setAttribute("fill", "none");
-        circle.setAttribute("opacity", "0.5");
-
-        svg.appendChild(circle);
+  
+  let ampm = 'AM';
+  let displayHours = hours;
+  
+  if (hours >= 12) {
+      ampm = 'PM';
+      displayHours = hours % 12;
+      if (displayHours === 0) {
+      displayHours = 12;
       }
-    }
+  }
+  
+  const timeString = `${displayHours}:${minutes}:${seconds} ${ampm}`;
+  document.getElementById('clock').textContent = timeString;
+}
 
-    function removeAll() {
-      while (svg.firstChild) {
-        svg.removeChild(svg.firstChild);
-      }
-    }
+// 매 초마다 시계 업데이트
+setInterval(updateClock, 1000);
 
-    function refresh() {
-      removeAll();
-      drawCircles();
-    }
-
-    // 최초 실행
-    refresh();
-
-    // 1.5초 간격으로 계속 새로 그림
-    setInterval(refresh, 4000);
+// 페이지 로드 시에도 시계 업데이트
+updateClock();
