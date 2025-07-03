@@ -43,3 +43,8 @@
   padding: 5px 15px;
 }
 
+/* padding */
+
+.container_wrap{
+  padding: 0 5rem;
+}
