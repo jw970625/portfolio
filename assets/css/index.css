@@ -248,6 +248,21 @@ body{
   to {transform: rotate(360deg);}
 }
 
+/* contact_sec */
+.contact_sec .contact_wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact_sec .contact_wrap .contact_title h3{
+  font-size: 8rem;
+}
+
 /* .footer_sec */
 .footer_sec{
   width: 100%;
