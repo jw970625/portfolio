@@ -106,6 +106,10 @@ body{
   margin-bottom: 3rem;
 }
 
+.main_sec .nav .util_menu li:hover{
+  color: #a50000;
+}
+
 .time{
   width: 100%;
   padding: 0 5rem;
@@ -145,7 +149,7 @@ body{
   width: 100%;
   height: 110vh;
   position: relative;
-  background-color: #000;
+  background-color: #222;
 }
 
 .about_sec .about_title{
@@ -249,9 +253,32 @@ body{
   font-weight: 400;
 }
 
+.project_box .project_title .project_link{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.project_box .project_title .project_link a{
+  font-size: 2rem;
+  border: 1px solid #fff;
+  padding: 0.4rem 3rem;
+  transition: 0.3s;
+}
+
+.project_box .project_title .project_link a:hover{
+  background: #fff;
+  color: #333;
+}
+
 /* list_sec */
 .list_sec{
-  padding: 10rem 0;
   margin-top: 10rem;
   position: relative;
   background-color: #000;
@@ -267,14 +294,14 @@ body{
 }
 
 .list_sec .list_wrap{
+  padding-top: 30rem;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: 'Pretendard Variable';
-  padding: 5rem 0;
 }
 
 .list_sec .list_wrap .list{
@@ -313,45 +340,72 @@ body{
 }
 
 /* contact_sec */
-.contact_sec .contact_wrap{
+.contact_sec{
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  position: relative;
+  background-color: #000;
 }
 
-.contact_sec .contact_wrap .contact_title h3{
-  font-size: 8rem;
+.contact_sec .contact_title{
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.contact_sec .contact_title h2{
+  font-size: 2.4rem;
+  color: #a50000;
+  font-weight: 600;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.contact_sec .contact_title h3{
+  font-size: 4.8rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.contact_sec .contact_title p{
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 /* .footer_sec */
-.footer_sec{
-  width: 100%;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5rem;
-  margin: 0 auto;
-  position: fixed;
-  bottom: 0;
-  color: #fff;
-  z-index: 99;
-}
 
-@media (max-width: 1200px){
-  .main_sec .main_text .text{
-    font-size: 8rem;
-  }
-}
 
 @media (max-width: 1024px){
 
   .main_sec .main_text .text{
-    font-size: 6rem;
+    font-size: 8rem;
+  }
+
+  /* about_sec */
+  .about_sec .about_title{
+    padding: 0 5rem;
+  }
+
+  .about_sec .about_title h2::after{
+    display: none;
+  }
+
+  .about_sec .about_title h3{
+    font-size: 3.6rem;
+  }
+
+  /* contact_sec */
+  .contact_sec .contact_title{
+    padding: 0 5rem;
+  }
+
+  .contact_sec .contact_title h3{
+    font-size: 3.6rem;
   }
 }
 
