@@ -49,7 +49,6 @@ gsap.utils.toArray('.sec').forEach((sec, i) => {
     pin: true,
     pinSpacing: false,
     scrub: true,
-    markers:true,
     invalidateOnRefresh: true,
   });
 });
