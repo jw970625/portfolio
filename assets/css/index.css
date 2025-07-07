@@ -1,4 +1,5 @@
 body{
+  scroll-behavior: smooth;
   background-color: #000;
 }
 
@@ -7,7 +8,7 @@ body{
   width: 100%;
   height: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 3rem 5rem 0;
@@ -24,8 +25,22 @@ body{
   font-family: "Cormorant Garamond", serif;
 }
 
+.header_sec .nav .util_menu{
+  font-size: 1.6rem;
+  display: flex;
+  gap: 5rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: "IBM Plex Mono";
+  z-index: 1;
+}
+
+.header_sec .nav .util_menu li:hover{
+  color: #a50000;
+}
+
 /* main_sec */
-.main_sec{
+#main_sec{
   width: 100%;
   height: 100vh;
   margin: 0 auto;
@@ -33,7 +48,7 @@ body{
   position: relative;
 }
 
-.main_sec .main_text{
+#main_sec .main_text{
   width: 100%;
   position: absolute;
   top: 50%;
@@ -42,13 +57,13 @@ body{
 }
 
 
-.main_sec .tl, .tr, .bl, .br{
+#main_sec .tl, .tr, .bl, .br{
   width: 5rem;
   height: 5rem;
   z-index: 10;
 }
 
-.main_sec .tl{
+#main_sec .tl{
   top: 7rem;
   left: 5rem;
   border-top: 2px solid #f0f0f0;
@@ -56,7 +71,7 @@ body{
   position: fixed;
 }
 
-.main_sec .tr{
+#main_sec .tr{
   top: 7rem;
   right: 5rem;
   border-top: 2px solid #f0f0f0;
@@ -64,7 +79,7 @@ body{
   position: fixed;
 }
 
-.main_sec .bl{
+#main_sec .bl{
   bottom: 7rem;
   left: 5rem;
   border-bottom: 2px solid #f0f0f0;
@@ -72,7 +87,7 @@ body{
   position: fixed;
 }
 
-.main_sec .br{
+#main_sec .br{
   bottom: 7rem;
   right: 5rem;
   border-bottom: 2px solid #f0f0f0;
@@ -80,34 +95,12 @@ body{
   position: fixed;
 }
 
-.main_sec .time{
-  width: 100%;
+#main_sec .time{
   bottom: 7%;
+  right: 0;
   position: fixed;
   font-size: 1.8rem;
   font-weight: 400;
-  text-align: center;
-}
-
-.main_sec .nav .util_menu{
-  display: inline-block;
-  font-size: 1.6rem;
-  gap: 10rem;
-  color: #fff;
-  font-weight: 300;
-  font-family: "IBM Plex Mono";
-  position: fixed;
-  top: 40%;
-  left: 3%;
-  z-index: 1;
-}
-
-.main_sec .nav .util_menu li{
-  margin-bottom: 3rem;
-}
-
-.main_sec .nav .util_menu li:hover{
-  color: #a50000;
 }
 
 .time{
@@ -123,7 +116,7 @@ body{
   font-size: 1.4rem;
 }
 
-.main_sec .main_text .text{
+#main_sec .main_text .text{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -136,7 +129,7 @@ body{
   color: #fff;
 }
 
-.main_sec .main_text .text video{
+#main_sec .main_text .text video{
   width: 20rem;
   height: 10rem;
   border-radius: 10px;
@@ -145,14 +138,18 @@ body{
 }
 
 /* about_sec */
-.about_sec{
+#about_sec{
   width: 100%;
   height: 110vh;
   position: relative;
   background-color: #111;
 }
 
-.about_sec .about_title{
+#about_sec .about_img{
+  width: 100%;
+}
+
+#about_sec .about_title{
   width: 100%;
   max-width: 140rem;
   margin: 0 auto;
@@ -164,7 +161,7 @@ body{
   transform: translate(-50%,-50%);
 }
 
-.about_sec .about_title h2{
+#about_sec .about_title h2{
   font-size: 2.4rem;
   color: #a50000;
   font-weight: 600;
@@ -172,7 +169,7 @@ body{
   position: relative;
 }
 
-.about_sec .about_title h2::after{
+#about_sec .about_title h2::after{
   content: '';
   position: absolute;
   top: 0;
@@ -183,19 +180,19 @@ body{
   border-radius: 3rem;
 }
 
-.about_sec .about_title h3{
+#about_sec .about_title h3{
   font-size: 4.8rem;
   margin-bottom: 3rem;
   color: #fff;
 }
 
-.about_sec .about_title p{
+#about_sec .about_title p{
   font-size: 1.8rem;
   color: #fff;
 }
 
 /* project_sec */
-.project_sec{
+#project_sec{
   overflow: hidden;
 }
 
@@ -280,12 +277,12 @@ body{
 }
 
 /* list_sec */
-.list_sec{
+#list_sec{
   color: #fff;
   position: relative;
 }
 
-.list_sec .list_wrap{
+#list_sec .list_wrap{
   position: relative;
   width: 100%;
   height: 130vh;
@@ -298,7 +295,7 @@ body{
   padding-top: 10rem;
 }
 
-.list_sec .list_title{
+#list_sec .list_title{
   width: 100%;
   font-family: "IBM Plex Mono";
   font-size: 2rem;
@@ -306,7 +303,7 @@ body{
   text-align: center;
 }
 
-.list_sec .list_wrap .list{
+#list_sec .list_wrap .list{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -314,20 +311,20 @@ body{
   border-top: 2px solid #333;
   padding: 10rem 5rem;
   transition: 0.2s;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 400;
 }
 
-.list_sec .list_wrap .list:last-child{
+#list_sec .list_wrap .list:last-child{
   border-bottom: 2px solid #333;
 }
 
-.list_sec .list_wrap .list:hover{
+#list_sec .list_wrap .list:hover{
   background-color: #222;
   color: #fff;
 }
 
-.list_sec .list_wrap .list .fade{
+#list_sec .list_wrap .list .fade{
   position: fixed;
   top: 0;
   left: 0;
@@ -337,28 +334,28 @@ body{
   object-fit: cover;
 }
 
-.list_sec .list_wrap .list .tag{
+#list_sec .list_wrap .list .tag{
   font-size: 2rem;
   text-align: left;
 }
 
-.list_sec .list_wrap .list .year{
+#list_sec .list_wrap .list .year{
   font-size: 2.4rem;
 }
 
 /* contact_sec */
-.contact_sec{
+#contact_sec{
   padding: 0 5rem;
 }
 
-.contact_wrap{
+#contact_sec .contact_wrap{
   width: 100%;
   height: 100vh;
   position: relative;
   background-color: #000;
 }
 
-.contact_sec .contact_title{
+#contact_sec .contact_title{
   width: 100%;
   max-width: 140rem;
   margin: 0 auto;
@@ -369,7 +366,7 @@ body{
   transform: translate(-50%,-50%);
 }
 
-.contact_sec .contact_title h2{
+#contact_sec .contact_title h2{
   font-size: 2.4rem;
   color: #a50000;
   font-weight: 600;
@@ -377,38 +374,40 @@ body{
   position: relative;
 }
 
-.contact_sec .contact_title h3{
+#contact_sec .contact_title h3{
   font-size: 4.8rem;
   margin-bottom: 3rem;
   color: #fff;
 }
 
-.contact_sec .contact_title p{
+#contact_sec .contact_title p{
   font-size: 1.8rem;
   color: #fff;
 }
 
+
+
 @media (max-width: 1024px){
 
-  .main_sec .main_text .text{
+  #main_sec .main_text .text{
     font-size: 8rem;
   }
 
   /* about_sec */
-  .about_sec .about_title h2::after{
+  #about_sec .about_title h2::after{
     display: none;
   }
 
-  .about_sec .about_title h3{
+  #about_sec .about_title h3{
     font-size: 3.6rem;
   }
 
   /* contact_sec */
-  .contact_sec .contact_title{
+  #contact_sec .contact_title{
     text-align: left;
   }
 
-  .contact_sec .contact_title h3{
+  #contact_sec .contact_title h3{
     font-size: 4.2rem;
   }
 }
@@ -416,31 +415,39 @@ body{
 
 @media (max-width: 768px){
 
-  .list_sec .list_wrap{
+  .header_sec{
+    justify-content: center;
+  }
+
+  .header_sec .header_logo{
+    display: none;
+  }
+
+  #list_sec .list_wrap{
     height: 100vh;
   }
 
-  .list_sec .list_wrap .list .tag{
+  #list_sec .list_wrap .list .tag{
     font-size: 2rem;
   }
 
   /* list_sec */
-  .list_sec .list_wrap .list{
+  #list_sec .list_wrap .list{
     flex-direction: column;
-    font-size: 2.4rem;
-  }
-
-  .contact_sec .contact_title h3{
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 }
 
 @media (max-width: 540px){
-  .main_sec .main_text .text{
+  #main_sec .main_text .text{
     font-size: 4.8rem;
   }
 
-  .contact_sec .contact_title{
+  #list_sec .list_wrap .list .tag{
+    text-align: center;
+  }
+
+  #contact_sec .contact_title{
     text-align: center;
   }
 }
