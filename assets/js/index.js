@@ -30,31 +30,6 @@ setInterval(updateClock, 1000);
 // 페이지 로드 시에도 시계 업데이트
 updateClock();
 
-/* gsap tag 이벤트 */
-const categorieAnimation =() => {
-
-  const tween = gsap.from('.categories > a',{
-    opacity:0,
-    filter:'blur(3px)',  //숫자가 높을수록 부화가 될수 있으므로 10이하의 숫자를 사용권장
-    stagger:{
-      each:0.1,
-      from:'random'
-    }
-  })
-
-  ScrollTrigger.create({
-    trigger: '.catories_container',
-    start: 'top top',
-    end: '+=4000',
-    animation: tween,
-    pin: true,
-    scrub: true,
-  })
-};
-
-categorieAnimation();
-
-
 /* gsap 마우스포인트 이벤트 */
 gsap.registerPlugin(ScrollTrigger);
 
@@ -130,7 +105,9 @@ gsap.utils.toArray('.sec').forEach((sec, i) => {
     start: 'top top',
     pin: true,
     pinSpacing: false,
-    scrub: 3,
+    scrub: 1,
+    markers:true,
+    invalidateOnRefresh: true,
   });
 });
 
