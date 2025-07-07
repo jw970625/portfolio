@@ -30,6 +30,42 @@ setInterval(updateClock, 1000);
 // 페이지 로드 시에도 시계 업데이트
 updateClock();
 
+/* gsap 화면 겹치는 이벤트 */
+
+//(3) splitting
+$(function(){Splitting();});
+
+//(4) scrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh();
+});
+
+gsap.utils.toArray('.sec').forEach((sec, i) => {
+  ScrollTrigger.create({
+    trigger: sec,
+    start: 'top top',
+    pin: true,
+    pinSpacing: false,
+    scrub: true,
+    markers:true,
+    invalidateOnRefresh: true,
+  });
+});
+
+//(5)스냅기능
+ScrollTrigger.create({
+  snap: {
+      snapTo: (progress, self) => {
+          let panelStarts = tops.map(st => st.start),
+          snapScroll = gsap.utils.snap(panelStarts, self.scroll());
+          return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
+      },
+      duration: 0.5
+  }
+});
+
 /* gsap 마우스포인트 이벤트 */
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,40 +114,3 @@ $(document).on('click', 'a[href="#"]', function(e){
   e.preventDefault();
 });
 
-/* gsap 화면 겹치는 이벤트 */
-//(1) 모든 a태그 클릭 방지
-$(document).on('click', 'a[href="#"]', function(e){
-  e.preventDefault();
-});
-
-//스크롤트리거 전에 플러그인 소스를 먼저 입력해야 한다.
-//(2) scrolla.js
-$(function(){
-  $('.animate').scrolla({
-    mobile: true,
-    once: false
-  });
-});
-
-//(3) splitting
-$(function(){Splitting();});
-
-//(4) scrollTrigger
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray('.sec').forEach((sec, i) => {
-  ScrollTrigger.create({
-    trigger: sec,
-    start: 'top top',
-    pin: true,
-    pinSpacing: false,
-    scrub: 1,
-    markers:true,
-    invalidateOnRefresh: true,
-  });
-});
-
-//(5)스냅기능
-ScrollTrigger.create({
-  snap: 1 / (section.length - 1)
-});

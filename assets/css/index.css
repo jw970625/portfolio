@@ -113,11 +113,13 @@
 
 .about_sec .about_title{
   width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
   text-align: center;
 }
 
 .about_sec .about_title h2{
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   color: #555;
   margin-bottom: 5rem;
 }
@@ -135,19 +137,15 @@
 
 /* project_sec */
 .project_sec{
-  width: 100%;
-  height: 110vh;
-  position: relative;
-}
-
-.project_box:hover .header_sec{
-  color: #fff;
+  overflow: hidden;
 }
 
 .sec{
   width: 100%; 
-  height: 100%;
+  height: 110vh;
+  position: relative;
 }
+  
 /* 각 섹션별 배경색 설정 */
 .project_box {
   width: 100%;
@@ -192,12 +190,13 @@
 
 /* list_sec */
 .list_sec{
-  /* margin-top: 320rem; */
+  margin-top: 10rem;
   position: relative;
   width: 100%;
   height: 100vh;
   padding: 0 5rem;
   background-color: #fff;
+  color: #333;
 }
 
 .list_sec .title h2{
@@ -209,7 +208,6 @@
 
 .list_sec .list_wrap{
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,7 +227,7 @@
 }
 
 .list_sec .list_wrap .list:last-child{
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #f0f0f0;
 }
 
 .list_sec .list_wrap .list:hover{
