@@ -48,6 +48,19 @@ body{
   position: relative;
 }
 
+#main_sec .main_bg{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
 #main_sec .main_text{
   width: 100%;
   position: absolute;
@@ -96,7 +109,7 @@ body{
 }
 
 #main_sec .time{
-  bottom: 7%;
+  bottom: 10%;
   right: 0;
   position: fixed;
   font-size: 1.8rem;
@@ -116,6 +129,19 @@ body{
   font-size: 1.4rem;
 }
 
+#main_sec video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  filter: brightness(15%);
+}
+
 #main_sec .main_text .text{
   width: 100%;
   display: flex;
@@ -127,14 +153,6 @@ body{
   font-weight: 600;
   gap: 3rem;
   color: #fff;
-}
-
-#main_sec .main_text .text video{
-  width: 20rem;
-  height: 10rem;
-  border-radius: 10px;
-  object-fit: cover;
-  display: block;
 }
 
 /* about_sec */
@@ -221,6 +239,7 @@ body{
   right: 0;
   bottom: 0;
   display: block;
+  filter: brightness(35%);
 }
 
 .sec::before{
@@ -269,6 +288,7 @@ body{
   border: 1px solid #fff;
   padding: 0.4rem 2.5rem;
   transition: 0.3s;
+  display: block;
 }
 
 .project_box .project_title .project_link a:hover{
@@ -280,6 +300,7 @@ body{
 #list_sec{
   color: #fff;
   position: relative;
+  z-index: 10;
 }
 
 #list_sec .list_wrap{
@@ -292,6 +313,7 @@ body{
   font-family: 'Pretendard Variable';
   background: #000;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 #list_sec .list_title{
@@ -349,8 +371,9 @@ body{
 
 #contact_sec .contact_wrap{
   width: 100%;
-  max-width: 140rem;
+  max-width: 120rem;
   height: 100vh;
+  margin: 0 auto;
   position: relative;
   background-color: #000;
 }
@@ -373,18 +396,17 @@ body{
   position: relative;
 }
 
-#contact_sec .contact_title h3{
-  font-size: 4.8rem;
+#contact_sec .contact_title p.email{
+  font-size: 4rem;
   margin-bottom: 3rem;
   color: #fff;
+  letter-spacing: -0.6rem;
 }
 
 #contact_sec .contact_title p{
   font-size: 1.8rem;
   color: #fff;
 }
-
-
 
 @media (max-width: 1024px){
 
@@ -405,10 +427,6 @@ body{
   #contact_sec .contact_title{
     text-align: left;
   }
-
-  #contact_sec .contact_title h3{
-    font-size: 4.2rem;
-  }
 }
 
 
@@ -418,7 +436,7 @@ body{
     justify-content: center;
   }
 
-  .header_sec .header_logo{
+  .header_sec .nav{
     display: none;
   }
 
