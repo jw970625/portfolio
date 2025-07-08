@@ -265,9 +265,9 @@ body{
 }
 
 .project_box .project_title .project_link a{
-  font-size: 2rem;
+  font-size: 1.6rem;
   border: 1px solid #fff;
-  padding: 0.4rem 3rem;
+  padding: 0.4rem 2.5rem;
   transition: 0.3s;
 }
 
@@ -319,7 +319,7 @@ body{
 }
 
 #list_sec .list_wrap .list:hover{
-  background-color: #222;
+  background-color: #111;
   color: #fff;
 }
 
