@@ -109,7 +109,7 @@ gsap.utils.toArray('.list').forEach((elem) => {
   });
 });
 
-$(document).on('click', 'a[href="#"]', function(e){
+/* $(document).on('click', 'a[href="#"]', function(e){
   e.preventDefault();
-});
+}); */
 
