@@ -214,11 +214,12 @@ body{
   overflow: hidden;
 }
 
-#project_sec .sec.project04 h2{
+/* #project_sec .sec.project04 h2{
   font-family: 'KakaoBigSans-ExtraBold';
   margin-bottom: 1rem;
   font-weight: 100;
-}
+  font-size: 4.6rem;
+} */
 
 .sec{
   width: 100%; 
