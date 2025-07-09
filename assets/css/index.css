@@ -438,7 +438,6 @@ body{
   color: #fff;
 } */
 
-
 /* contact_sec */
 #contact_sec{
   padding: 0 5rem;
@@ -551,11 +550,28 @@ body{
     font-size: 4.8rem;
   }
 
+  #about_sec .about_title h3{
+    font-size: 2.8rem;
+  }
+
+  .project_box .project_title h2{
+    font-size: 6rem;
+  }
+
   #list_sec .list_wrap .list .tag{
     text-align: center;
   }
 
   #contact_sec .contact_title{
     text-align: center;
+  }
+
+  #contact_sec .contact_title p.email{
+    font-size: 3rem;
+    letter-spacing: -0.4rem;
+  }
+  
+  #contact_sec .contact_title .contact_link{
+    justify-content: center;
   }
 }
