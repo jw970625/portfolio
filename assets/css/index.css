@@ -313,6 +313,7 @@ body{
 #list_sec .list_wrap{
   position: relative;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
